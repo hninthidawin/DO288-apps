@@ -16,7 +16,7 @@ cp -Rf /tmp/src/*.html ./
 DATE=`date "%Y%M%D"`
 
 echo "---> Creating info page"
-echo "Page built on $DATE" >> ./info.html
+echo "date change $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
