@@ -1,7 +1,7 @@
 <?php
     #$link = mysqli_connect($_ENV["DATABASE_SERVICE_NAME"],$_ENV["DATABASE_USER"],$_ENV["DATABASE_PASSWORD"],$_ENV["DATABASE_NAME"]);
     
-    $link = new mysqli("$_ENV["DATABASE_SERVICE_NAME"]:3306", $_ENV["DATABASE_USER"],$_ENV["DATABASE_PASSWORD"],$_ENV["DATABASE_NAME"])
+    $link = new mysqli($_ENV["DATABASE_SERVICE_NAME"], $_ENV["DATABASE_USER"],$_ENV["DATABASE_PASSWORD"],$_ENV["DATABASE_NAME"])
     if (!$link) {
         http_response_code (500);
         error_log ("Error: unable to connect to database\n");
