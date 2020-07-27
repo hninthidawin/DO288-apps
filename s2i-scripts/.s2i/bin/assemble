@@ -21,8 +21,13 @@ cp -Rf /tmp/src/*.html ./
 #echo "date change $DATE" >> ./info.html
 #echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
-DATE=`date +%Y%m%d`
-echo "TEXT TO iNCLUDE $DATE" >> ./info.html
+#DATE=`date +%Y%m%d`
+#echo "TEXT TO iNCLUDE $DATE" >> ./info.html
+
+DATE=`date "+%Y%m%d"`
+echo "VALUE TO SEE \n" >> ./info.html
+echo "launching in $DATE" >> ./info.html
+
 
 ######## CUSTOMIZATION ENDS HERE ############
 
