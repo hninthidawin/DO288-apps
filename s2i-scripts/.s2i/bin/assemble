@@ -25,7 +25,7 @@ cp -Rf /tmp/src/*.html ./
 #echo "TEXT TO iNCLUDE $DATE" >> ./info.html
 
 DATE=`date "+%Y%m%d"`
-echo "VALUE TO SEE \n" >> ./info.html
+echo "VALUE TO SEE <br>" >> ./info.html
 echo "launching in $DATE" >> ./info.html
 
 
